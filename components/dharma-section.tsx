@@ -67,7 +67,7 @@ export function DharmaSection() {
             <div className="mt-6 space-y-3">
               {principles.map((principle, index) => (
                 <div key={index} className="flex gap-3">
-                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-foreground/20">
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-[4px] bg-primary-foreground/20">
                     <Check className="h-3 w-3 text-primary-foreground" />
                   </div>
                   <p className="text-sm leading-relaxed text-primary-foreground/90">{principle}</p>

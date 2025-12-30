@@ -22,14 +22,14 @@ export function HeroSection() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="#visit"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-all hover:opacity-90 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-all hover:opacity-90 hover:scale-105 shadow-sm"
             >
               Plan Your Visit
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               href="#gatherings"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-8 py-4 text-sm font-medium text-foreground transition-all hover:bg-muted"
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-8 py-4 text-sm font-medium text-foreground transition-all hover:bg-muted shadow-sm"
             >
               View Schedule
             </Link>
@@ -41,7 +41,7 @@ export function HeroSection() {
         <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-primary/10">
           <div className="aspect-[21/9] w-full">
             <Image
-              src="/upved-havan.png"
+              src="/upved-havan.webp"
               alt="UPVED community gathering around sacred havan fire"
               fill
               className="object-cover"

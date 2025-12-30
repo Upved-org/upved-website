@@ -12,8 +12,8 @@ const navItems = [
     href: "#gatherings",
     submenu: [
       { label: "Sunday Havan", href: "#gatherings" },
-      { label: "Sandhya Practice", href: "#gatherings" },
-      { label: "Special Events", href: "#gatherings" },
+      { label: "Siddha-Vani", href: "#gatherings" },
+      { label: "Rocketarm Fellowship", href: "#gatherings" },
     ],
   },
   {
@@ -21,13 +21,14 @@ const navItems = [
     href: "#dharma",
     submenu: [
       { label: "The Path", href: "#dharma" },
-      { label: "14 Vedic Principles", href: "#dharma" },
+      { label: "Upved Principles", href: "#dharma" },
       { label: "Vedic Teachers", href: "#teachers" },
     ],
   },
   { label: "Teachers", href: "#teachers" },
   { label: "RocketArm", href: "#rocketarm" },
-  { label: "Visit", href: "#visit" },
+  { label: "Events", href: "/events" },
+  { label: "Visit", href: "/events" },
 ]
 
 export function Navigation() {
@@ -53,9 +54,9 @@ export function Navigation() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo - Always visible with warm accent */}
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/upved-logo.png" alt="UPVED Logo" width={36} height={36} className="h-9 w-9 object-contain" />
-            <span className="text-lg font-semibold tracking-tight text-foreground">UPVED</span>
+          <Link href="/" className="flex items-center gap-1">
+            <Image src="/upved-logo-nobg.webp" alt="UPVED Logo" width={44} height={44} className="h-11 w-11 object-contain" />
+            <span className="text-xl font-bold tracking-tight text-foreground">UPVED</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -98,8 +99,8 @@ export function Navigation() {
           {/* CTA Button - warm primary color */}
           <div className="hidden md:block">
             <Link
-              href="#visit"
-              className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              href="/events"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 shadow-sm"
             >
               Plan Your Visit
             </Link>
@@ -146,8 +147,8 @@ export function Navigation() {
               ))}
               <div className="pt-4">
                 <Link
-                  href="#visit"
-                  className="block rounded-full bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground"
+                  href="/events"
+                  className="block rounded-md bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground shadow-sm"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Plan Your Visit

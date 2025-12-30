@@ -1,27 +1,32 @@
 import Image from "next/image"
-import { Calendar, Clock, MapPin } from "lucide-react"
+import Link from "next/link"
+import { Calendar, Clock, MapPin, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const services = [
   {
-    name: "Sunday Havan",
-    description: "Sacred fire ceremony with Vedic mantras and offerings",
+    name: "Agnihotra",
+    description: "Traditional Haryanvi-style fire ritual and Siddha-Vani discourse",
     time: "10:00 AM",
     duration: "90 min",
     recurring: "Every Sunday",
+    href: "/gatherings?tab=sunday-havan",
   },
   {
-    name: "Sandhya Practice",
-    description: "Twilight meditation and mantra recitation",
-    time: "6:00 PM",
-    duration: "60 min",
-    recurring: "Wed & Fri",
-  },
-  {
-    name: "Vedic Study Circle",
-    description: "Deep dive into Upanishadic texts and Vedanta philosophy",
+    name: "Siddha-Vani",
+    description: "Dharma discourse on the Kshatriya virtues of discipline and vitality",
     time: "11:30 AM",
-    duration: "45 min",
-    recurring: "First Sunday",
+    duration: "30 min",
+    recurring: "Every Sunday",
+    href: "/gatherings?tab=siddha-vani",
+  },
+  {
+    name: "Rocketarm Fellowship",
+    description: "The Rite of Urdhva Kanduka - Kinetic worship and focus",
+    time: "Sat & Sun",
+    duration: "Var",
+    recurring: "Weekly",
+    href: "/gatherings?tab=rocketarm",
   },
 ]
 
@@ -39,9 +44,9 @@ const locations = [
 ]
 
 const organizer = {
-  name: "Your Name", // Replace with your actual name
+  name: "Nitin Arya", // Replace with your actual name
   role: "Founder & Lead Organizer",
-  image: "/professional-headshot.png", // Replace with your photo path
+  image: "/narya-small.webp", // Replace with your photo path
 }
 
 export function GatheringSection() {
@@ -61,11 +66,11 @@ export function GatheringSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 lg:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.name}
-              className="group rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/30 hover:shadow-lg"
+              className="group rounded-[12px] border border-border bg-card p-8 transition-all hover:border-primary/50 hover:shadow-lg"
             >
               <div className="flex items-center gap-3 text-primary">
                 <Calendar className="h-4 w-4" />
@@ -81,6 +86,16 @@ export function GatheringSection() {
                   <span className="font-medium tabular-nums text-foreground">{service.time}</span>
                 </div>
                 <div className="text-sm text-muted-foreground">{service.duration}</div>
+              </div>
+
+              {/* Learn More Button */}
+              <div className="mt-6">
+                <Button asChild variant="outline" className="w-full group-hover:border-primary group-hover:text-primary">
+                  <Link href={service.href} className="gap-2">
+                    Learn More
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
               </div>
             </div>
           ))}
@@ -99,7 +114,7 @@ export function GatheringSection() {
                     <div className="flex items-center gap-3">
                       <h3 className="text-lg font-semibold text-foreground">{location.name}</h3>
                       {location.status === "coming-soon" && (
-                        <span className="rounded-full bg-accent/50 px-3 py-0.5 text-xs font-medium text-accent-foreground">
+                        <span className="rounded-md bg-orange-200 px-2 py-1 text-xs font-medium text-orange-800 whitespace-nowrap">
                           Coming Soon
                         </span>
                       )}
@@ -118,7 +133,7 @@ export function GatheringSection() {
                         alt={organizer.name}
                         width={48}
                         height={48}
-                        className="rounded-full object-cover"
+                        className="rounded-[12px] object-cover shadow-sm"
                       />
                       <div>
                         <p className="text-sm font-medium text-foreground">{organizer.name}</p>
@@ -128,8 +143,8 @@ export function GatheringSection() {
 
                     {/* RSVP Button - fixed to single row */}
                     <a
-                      href="/connect"
-                      className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                      href="/events"
+                      className="inline-flex items-center justify-center whitespace-nowrap rounded-md bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 shadow-sm"
                     >
                       RSVP Now
                     </a>

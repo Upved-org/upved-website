@@ -6,28 +6,28 @@ const vedicTeachers = [
     title: "Founder of Arya Samaj",
     era: "1824–1883",
     contribution: "Pioneered the return to Vedic principles and established the foundation for modern Vedic reform",
-    image: "/swami-dayananda-saraswati-portrait-historical.jpg",
+    image: "/swami-dayananda-saraswati-portrait-historical.webp",
   },
   {
     name: "Swami Vivekananda",
     title: "Vedanta Ambassador",
     era: "1863–1902",
     contribution: "Brought Vedantic philosophy to the global stage and emphasized practical spirituality",
-    image: "/swami-vivekananda-portrait-historical.jpg",
+    image: "/swami-vivekananda-portrait-historical.webp",
   },
   {
     name: "Sri Aurobindo",
     title: "Integral Yoga Pioneer",
     era: "1872–1950",
     contribution: "Synthesized Eastern and Western philosophy, advancing integral approaches to spiritual evolution",
-    image: "/sri-aurobindo-portrait-historical.jpg",
+    image: "/sri-aurobindo-portrait-historical.webp",
   },
   {
     name: "Pandit Guru Dutt Vidyarthi",
     title: "Arya Samaj Scholar",
     era: "1864–1890",
     contribution: "Authored foundational texts defending Vedic principles and advancing educational reform",
-    image: "/pandit-guru-dutt-portrait-historical.jpg",
+    image: "/pandit-guru-dutt-portrait-historical.webp",
   },
 ]
 

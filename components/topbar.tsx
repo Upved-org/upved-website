@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, PanelLeft } from "lucide-react"
+import { Menu, X, PanelLeftClose, PanelLeftOpen, Heart } from "lucide-react"
 import { useSidebar } from "./sidebar-provider"
 
 export function Topbar() {
@@ -13,18 +13,17 @@ export function Topbar() {
       <div className="flex h-full items-center px-4 lg:px-6 justify-between">
         {/* Left side: Logo + Sidebar Toggle */}
         <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/upved-logo.png" alt="UPVED Logo" width={32} height={32} className="h-8 w-8 object-contain" />
-            <span className="text-lg font-semibold tracking-tight text-foreground">UPVED</span>
+          <Link href="/" className="flex items-center gap-1">
+            <Image src="/upved-logo-nobg.webp" alt="UPVED Logo" width={40} height={40} className="h-10 w-10 object-contain" />
+            <span className="text-xl font-bold tracking-tight text-foreground">UPVED</span>
           </Link>
 
-          {/* Desktop sidebar toggle */}
           <button
             onClick={toggle}
-            className="hidden md:flex items-center justify-center p-2 text-muted-foreground hover:text-foreground transition-colors rounded-md"
-            aria-label="Toggle sidebar"
+            className="hidden md:flex items-center justify-center p-2 text-gray-500 hover:text-black dark:hover:text-white transition-colors rounded-md"
+            aria-label={isOpen ? "Close sidebar" : "Open sidebar"}
           >
-            <PanelLeft size={18} className={isOpen ? "text-foreground" : "text-muted-foreground"} />
+            {isOpen ? <PanelLeftClose size={20} /> : <PanelLeftOpen size={20} />}
           </button>
         </div>
 
@@ -36,10 +35,11 @@ export function Topbar() {
         {/* Right side: CTA + Mobile Toggle */}
         <div className="flex items-center gap-2">
           <Link
-            href="#visit"
-            className="hidden sm:inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            href="/#donate"
+            className="hidden sm:inline-flex items-center gap-2 justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Plan Your Visit
+            <Heart size={16} />
+            Donate
           </Link>
 
           {/* Mobile sidebar toggle */}
