@@ -35,11 +35,12 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   {
-    label: "Gatherings",
+    label: "Programs",
     href: "/gatherings",
     subpages: [
-      { label: "Sunday Havan", tabId: "sunday-havan", description: "Sunday 1:00 PM" },
-      { label: "Sandhya Practice", tabId: "sandhya-practice", description: "Wednesday 6:00 PM" },
+      { label: "Restore", tabId: "restore", description: "Habitat recovery" },
+      { label: "Learn", tabId: "learn", description: "Climate education" },
+      { label: "Mobilize", tabId: "mobilize", description: "Community action" },
     ],
   },
   {
@@ -48,25 +49,25 @@ const navItems: NavItem[] = [
     icon: <Calendar className="h-4 w-4" />,
   },
   {
-    label: "Our Dharma",
+    label: "Our Approach",
     href: "/dharma",
     subpages: [
-      { label: "The Path", tabId: "path" },
-      { label: "Upved Principles", tabId: "principles" },
-      { label: "Vedic Texts", tabId: "texts" },
+      { label: "Impact model", tabId: "impact" },
+      { label: "Principles", tabId: "principles" },
+      { label: "Evidence", tabId: "evidence" },
       { label: "FAQ", tabId: "faq" },
     ],
   },
   {
-    label: "Upved Teachings",
+    label: "Research & Insights",
     href: "/teachings",
   },
   {
     label: "Community",
     href: "/community",
     subpages: [
-      { label: "Wellness Walks", tabId: "wellness-walks" },
-      { label: "Community Games", tabId: "community-games" },
+      { label: "Local chapters", tabId: "chapters" },
+      { label: "Field days", tabId: "field-days" },
     ],
   },
   {
@@ -79,7 +80,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Join Us",
+    label: "Take Action",
     href: "/join",
   },
   {

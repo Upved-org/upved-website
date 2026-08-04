@@ -13,9 +13,9 @@ export function Topbar() {
       <div className="flex h-full items-center px-4 lg:px-6 justify-between">
         {/* Left side: Logo + Sidebar Toggle */}
         <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-1">
-            <Image src="/upved-logo-nobg.webp" alt="UPVED Logo" width={40} height={40} className="h-10 w-10 object-contain" />
-            <span className="text-xl font-bold tracking-tight text-foreground">UPVED</span>
+          <Link href="/" className="flex items-center gap-2.5">
+            <Image src="/upved-earth-mark.svg" alt="UPVED Earth mark" width={40} height={40} className="h-10 w-10" />
+            <span className="leading-none"><span className="block text-lg font-bold tracking-[0.16em] text-foreground">UPVED</span><span className="hidden text-[9px] font-semibold uppercase tracking-[0.12em] text-muted-foreground sm:block">Environmental Impact Foundation</span></span>
           </Link>
 
           <button
@@ -29,7 +29,7 @@ export function Topbar() {
 
         {/* Center: Optional tagline on desktop */}
         <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2">
-          {/* <span className="text-sm text-muted-foreground">Ancient Wisdom, Modern Rituals</span> */}
+          {/* Reserved for future campaign messaging. */}
         </div>
 
         {/* Right side: CTA + Mobile Toggle */}
@@ -39,7 +39,7 @@ export function Topbar() {
             className="hidden sm:inline-flex items-center gap-2 justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             <Heart size={16} />
-            Donate
+            Fund impact
           </Link>
 
           {/* Mobile sidebar toggle */}

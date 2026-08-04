@@ -15,26 +15,13 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   metadataBase: new URL('https://upved.org'),
   title: {
-    default: "UPVED | Ancient Wisdom, Modern Rituals",
+    default: "UPVED | Environmental Impact Foundation",
     template: "%s | UPVED",
   },
   description:
-    "A Vedic spiritual community rooted in the Arya Samaj tradition. Join us for Sunday Havan & Sandhya at our San Mateo Sanctuary.",
+    "An environmental impact foundation restoring ecosystems, equipping local leaders, and turning climate ambition into measurable progress.",
   keywords: [
-    "Vedic",
-    "Arya Samaj",
-    "Havan",
-    "Agnihotra",
-    "Spirituality",
-    "San Mateo",
-    "Church",
-    "Vedanta",
-    "Upved",
-    "Haryana Vedic",
-    "Dharma",
-    "Meditation",
-    "Yoga",
-    "Sanskrit",
+    "environmental foundation", "climate action", "habitat restoration", "environmental education", "community science", "conservation", "UPVED",
   ],
   authors: [{ name: "UPVED" }],
   creator: "UPVED",
@@ -49,24 +36,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://upved.org",
     siteName: "UPVED",
-    title: "UPVED | Ancient Wisdom, Modern Rituals",
+    title: "UPVED | Environmental Impact Foundation",
     description:
-      "A Vedic spiritual community rooted in the Arya Samaj tradition. Join us for Sunday Havan & Sandhya at our San Mateo Sanctuary.",
+      "Practical environmental solutions powered by science and local leadership.",
     images: [
       {
-        url: "/upved-logo.png",
+        url: "/environment-forest-hero.jpg",
         width: 1200,
         height: 630,
-        alt: "UPVED Logo",
+        alt: "Sunlit forest representing UPVED's environmental work",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "UPVED | Ancient Wisdom, Modern Rituals",
+    title: "UPVED | Environmental Impact Foundation",
     description:
-      "A Vedic spiritual community rooted in the Arya Samaj tradition. Join us for Sunday Havan & Sandhya at our San Mateo Sanctuary.",
-    images: ["/upved-logo.png"],
+      "Practical environmental solutions powered by science and local leadership.",
+    images: ["/environment-forest-hero.jpg"],
   },
   icons: {
     icon: "/icon.png",
@@ -102,4 +89,3 @@ export default function RootLayout({
     </html>
   )
 }
-

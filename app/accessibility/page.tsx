@@ -59,7 +59,7 @@ export default function AccessibilityPage() {
           </CardHeader>
           <CardContent className="text-muted-foreground space-y-4">
             <p>
-              Our gathering spaces are designed to be accessible to individuals with physical 
+              Our event spaces are selected to be accessible to individuals with physical
               disabilities:
             </p>
             <ul className="list-disc pl-6 space-y-2">

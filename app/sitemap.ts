@@ -17,19 +17,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/gatherings?tab=sunday-havan`,
+      url: `${baseUrl}/gatherings?tab=restore`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/gatherings?tab=siddha-vani`,
+      url: `${baseUrl}/gatherings?tab=learn`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/gatherings?tab=rocketarm`,
+      url: `${baseUrl}/gatherings?tab=mobilize`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/dharma?tab=path`,
+      url: `${baseUrl}/dharma?tab=impact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -59,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/dharma?tab=texts`,
+      url: `${baseUrl}/dharma?tab=evidence`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
