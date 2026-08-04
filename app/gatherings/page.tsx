@@ -2,10 +2,7 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 import { GatheringsPageClient } from "@/components/gatherings-page-client"
 
-export const metadata: Metadata = {
-  title: "Gatherings | UPVED",
-  description: "Join our weekly gatherings: Sunday Havan and Sandhya Practice. Experience the transformative power of Vedic rituals.",
-}
+export const metadata: Metadata = { title: "Programs", description: "Explore UPVED habitat restoration, climate education, and community action programs." }
 
 export default function GatheringsPage() {
   return (

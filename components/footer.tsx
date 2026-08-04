@@ -4,19 +4,19 @@ import { FaFacebook, FaInstagram, FaYoutube, FaXTwitter, FaThreads, FaTiktok } f
 
 const footerLinks = {
   community: [
-    { label: "Gatherings", href: "/gatherings" },
+    { label: "Programs", href: "/gatherings" },
     { label: "Community", href: "/community" },
   ],
   learn: [
-    { label: "Our Dharma", href: "/dharma" },
-    { label: "Teachings", href: "/teachings" },
+    { label: "Our Approach", href: "/dharma" },
+    { label: "Research & Insights", href: "/teachings" },
   ],
   company: [
     { label: "About Us", href: "/about" },
     { label: "Governance", href: "/support?tab=governance" },
   ],
   getInvolved: [
-    { label: "Join us", href: "/join" },
+    { label: "Take action", href: "/join" },
     { label: "Volunteer", href: "/join?tab=volunteer" },
     { label: "Donate", href: "/support?tab=donate" },
     { label: "Contact", href: "/support?tab=contact" },
@@ -32,14 +32,14 @@ export function Footer() {
           {/* Left Side - Logo and Description */}
           <div className="lg:max-w-sm">
             <Link href="/" className="flex items-center gap-1">
-              <Image src="/upved-logo-nobg.webp" alt="UPVED Logo" width={44} height={44} className="h-11 w-11 object-contain" />
-              <span className="text-xl font-bold tracking-tight text-foreground">UPVED</span>
+              <Image src="/upved-earth-mark.svg" alt="UPVED Earth mark" width={44} height={44} className="h-11 w-11" />
+              <span className="text-xl font-bold tracking-[0.16em] text-foreground">UPVED</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              A Vedic spiritual community rooted in the Arya Samaj tradition, serving communities across the United States.
+              An environmental impact foundation restoring ecosystems, equipping local leaders, and turning climate ambition into measurable progress.
             </p>
             <p className="mt-2 text-xs text-muted-foreground">
-              UPVED is a 501(c)(3) religious organization. All donations are tax-deductible.
+              UPVED is a 501(c)(3) nonprofit organization. Contributions are tax-deductible to the extent allowed by law.
             </p>
           </div>
 

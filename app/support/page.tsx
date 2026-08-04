@@ -2,10 +2,7 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 import { SupportPageClient } from "@/components/support-page-client"
 
-export const metadata: Metadata = {
-  title: "Support | UPVED",
-  description: "Support UPVED through donations, volunteer, or connect with our community. View our governance and transparency documents.",
-}
+export const metadata: Metadata = { title: "Support", description: "Fund UPVED environmental programs, contact the team, and view governance information." }
 
 export default function SupportPage() {
   return (

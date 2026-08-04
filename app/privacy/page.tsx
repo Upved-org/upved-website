@@ -14,7 +14,7 @@ export default function PrivacyPage() {
           Privacy Policy
         </h1>
         <p className="text-muted-foreground">
-          Last updated: December 2024
+          Last updated: August 2026
         </p>
       </div>
 
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               UPVED collects information you voluntarily provide when you:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Register for events or gatherings</li>
+              <li>Register for field days, workshops, or other events</li>
               <li>Make a donation</li>
               <li>Sign up for our newsletter</li>
               <li>Contact us through our website</li>
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           <CardContent className="text-muted-foreground space-y-4">
             <p>We use the information we collect to:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Communicate about events and gatherings</li>
+              <li>Communicate about programs and events</li>
               <li>Process donations and provide tax receipts</li>
               <li>Send newsletters and community updates</li>
               <li>Respond to your inquiries</li>

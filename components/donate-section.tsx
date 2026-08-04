@@ -1,29 +1,6 @@
-import { Heart } from "lucide-react"
-import { DonationForm } from "@/components/donation-form"
+import Link from "next/link"
+import { Heart, ArrowRight } from "lucide-react"
 
 export function DonateSection() {
-  return (
-    <section id="donate" className="relative py-24 bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center rounded-md bg-primary/10 px-4 py-2 mb-6">
-            <Heart className="h-4 w-4 text-primary mr-2" />
-            <span className="text-sm font-medium text-primary">Support Our Mission</span>
-          </div>
-          
-          <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-4">
-            Give the Gift of Vedic Wisdom
-          </h2>
-          
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Your generous support helps us maintain our sanctuary, host weekly gatherings, and spread the timeless teachings of the Vedas to communities across the United States.
-          </p>
-        </div>
-
-        {/* Donation Form */}
-        <DonationForm />
-      </div>
-    </section>
-  )
+  return <section id="donate" className="px-6 py-24 lg:px-12"><div className="mx-auto max-w-7xl overflow-hidden rounded-3xl bg-[#c8e18f] p-9 md:p-14"><div className="flex flex-col justify-between gap-8 md:flex-row md:items-end"><div className="max-w-3xl"><Heart className="h-8 w-8 text-primary"/><h2 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">Your gift becomes cleaner water, cooler streets, and living habitat.</h2><p className="mt-5 text-lg text-foreground/70">Fund practical work with long-term stewardship built in.</p></div><Link href="/support?tab=donate" className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#173f32] px-6 py-3.5 font-semibold text-white">Fund impact <ArrowRight className="h-4 w-4" /></Link></div></div></section>
 }

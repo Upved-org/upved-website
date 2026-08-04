@@ -8,27 +8,27 @@ import { cn } from "@/lib/utils"
 
 const navItems = [
   {
-    label: "Gatherings",
+    label: "Programs",
     href: "#gatherings",
     submenu: [
-      { label: "Sunday Havan", href: "#gatherings" },
-      { label: "Siddha-Vani", href: "#gatherings" },
-      { label: "Rocketarm Fellowship", href: "#gatherings" },
+      { label: "Restore", href: "/gatherings?tab=restore" },
+      { label: "Learn", href: "/gatherings?tab=learn" },
+      { label: "Mobilize", href: "/gatherings?tab=mobilize" },
     ],
   },
   {
-    label: "Our Dharma",
-    href: "#dharma",
+    label: "Our Approach",
+    href: "/dharma",
     submenu: [
-      { label: "The Path", href: "#dharma" },
-      { label: "Upved Principles", href: "#dharma" },
-      { label: "Vedic Teachers", href: "#teachers" },
+      { label: "Impact model", href: "/dharma?tab=impact" },
+      { label: "Principles", href: "/dharma?tab=principles" },
+      { label: "Evidence", href: "/dharma?tab=evidence" },
     ],
   },
-  { label: "Teachers", href: "#teachers" },
-  { label: "RocketArm", href: "#rocketarm" },
+  { label: "Insights", href: "/teachings" },
+  { label: "Community", href: "/community" },
   { label: "Events", href: "/events" },
-  { label: "Visit", href: "/events" },
+  { label: "About", href: "/about" },
 ]
 
 export function Navigation() {
@@ -55,7 +55,7 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo - Always visible with warm accent */}
           <Link href="/" className="flex items-center gap-1">
-            <Image src="/upved-logo-nobg.webp" alt="UPVED Logo" width={44} height={44} className="h-11 w-11 object-contain" />
+            <Image src="/upved-earth-mark.svg" alt="UPVED Earth mark" width={44} height={44} className="h-11 w-11" />
             <span className="text-xl font-bold tracking-tight text-foreground">UPVED</span>
           </Link>
 
@@ -102,7 +102,7 @@ export function Navigation() {
               href="/events"
               className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 shadow-sm"
             >
-              Plan Your Visit
+              Take action
             </Link>
           </div>
 
@@ -151,7 +151,7 @@ export function Navigation() {
                   className="block rounded-md bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground shadow-sm"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Plan Your Visit
+                  Take action
                 </Link>
               </div>
             </div>

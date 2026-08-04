@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">UPVED Earth Mark</title>
+  <desc id="desc">A leaf and river forming a circular living planet</desc>
+  <defs>
+    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8C66C"/>
+      <stop offset="1" stop-color="#2F6B4F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="27" fill="#EFF5E8" stroke="#2F6B4F" stroke-width="2"/>
+  <path d="M48 15C31 16 19 25 17 42c10 2 20-1 26-9 5-6 6-13 5-18Z" fill="url(#g)"/>
+  <path d="M16 47c9-12 18-20 31-28M22 42c8 1 15 4 20 8" fill="none" stroke="#164B3B" stroke-width="3" stroke-linecap="round"/>
+</svg>

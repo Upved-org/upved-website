@@ -2,10 +2,7 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 import { CommunityPageClient } from "@/components/community-page-client"
 
-export const metadata: Metadata = {
-  title: "Community | UPVED",
-  description: "Join our community programs including Wellness Walks and Community Games. Building connections through shared experiences.",
-}
+export const metadata: Metadata = { title: "Community", description: "Join UPVED local chapters, field days, and community environmental action." }
 
 export default function CommunityPage() {
   return (

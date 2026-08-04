@@ -2,10 +2,7 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 import { DharmaPageClient } from "@/components/dharma-page-client"
 
-export const metadata: Metadata = {
-  title: "Our Dharma | UPVED",
-  description: "Explore the path of Vedic wisdom: The Arya Samaj tradition and 14 Vedic Principles that guide our community.",
-}
+export const metadata: Metadata = { title: "Our Approach", description: "See how UPVED combines evidence, local leadership, durable funding, and transparent learning." }
 
 export default function DharmaPage() {
   return (
