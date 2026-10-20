@@ -19,7 +19,7 @@ const SECURITY_EMAIL = "security@upved.org"
 
 const programFacts = [
   { label: "Program type", value: "Self-hosted, public, paid bug bounty" },
-  { label: "Launch date", value: "October 20, 2026" },
+  { label: "Launch date", value: "October 10, 2025" },
   { label: "Last updated", value: "October 20, 2026" },
   { label: "Rewards", value: "USD $50 – $2,500 per valid, eligible report" },
   { label: "Contact", value: SECURITY_EMAIL },
