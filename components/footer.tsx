@@ -127,6 +127,9 @@ export function Footer() {
               <Link href="/accessibility" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                 Accessibility
               </Link>
+              <Link href="/bug-bounty" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                Bug Bounty
+              </Link>
             </div>
           </div>
 
